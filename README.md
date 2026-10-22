@@ -1,4 +1,4 @@
-# Deloitte data engineering assignment
+# Data pipeline in GCP
 
 This repository provides a foundation for building and operating multiple
 batch data pipelines on Google Cloud.  
