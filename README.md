@@ -56,29 +56,32 @@ requirements.txt           Python dependencies
 
 ### Clone the repository
 
-```powershell
-git clone https://github.com/zoharg2403/GCP-data-pipeline.git
-Set-Location <your-location>
-```
+The Dataform submodule is tracked by the main repository through `.gitmodules` and a submodule commit pointer. 
 
-The Dataform project is maintained in a separate repository.  
-Clone it into the expected directory if it is not already present:
+Choose one of these options:
 
-```powershell
-git clone https://github.com/zoharg2403/GCP-dataform.git dataform
-```
-
-OR clone the repository with its submodules:
+**Clone the main repository and its submodules together:**
 
 ```powershell
 git clone --recurse-submodules https://github.com/zoharg2403/GCP-data-pipeline.git
 Set-Location <your-location>
 ```
 
-If you already cloned the repository and the submodule folders are empty, run this command from inside your project folder:
+**Clone the main repository without initializing submodules, then fetch them
+separately when needed:**
 
 ```powershell
+git clone https://github.com/zoharg2403/GCP-data-pipeline.git
+Set-Location <your-location>
+```
+```
 git submodule update --init --recursive
+```
+ 
+Add Dataform as a submodule manually:
+
+```powershell
+git submodule add https://github.com/zoharg2403/GCP-dataform.git dataform
 ```
 
 ### Install Python dependencies
