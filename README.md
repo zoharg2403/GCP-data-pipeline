@@ -57,7 +57,7 @@ requirements.txt           Python dependencies
 ### Clone the repository
 
 ```powershell
-git clone https://github.com/zoharg2403/DeloitteAssignment.git
+git clone https://github.com/zoharg2403/GCP-data-pipeline.git
 Set-Location <your-location>
 ```
 
@@ -65,13 +65,13 @@ The Dataform project is maintained in a separate repository.
 Clone it into the expected directory if it is not already present:
 
 ```powershell
-git clone https://github.com/zoharg2403/DeloitteAssignment-dataform.git dataform
+git clone https://github.com/zoharg2403/GCP-dataform.git dataform
 ```
 
 OR clone the repository with its submodules:
 
 ```powershell
-git clone --recurse-submodules https://github.com/zoharg2403/DeloitteAssignment.git
+git clone --recurse-submodules https://github.com/zoharg2403/GCP-data-pipeline.git
 Set-Location <your-location>
 ```
 
